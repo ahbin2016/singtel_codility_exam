@@ -104,3 +104,5 @@ implement them to make their own special sound?
  • Urdu: kuklooku
 ```
  - ``Done - Added Util class for Translation and Enum class for Language``
+ 
+2.Can you design a RESTful API for querying these animals? ``Created a sample GET Endpoint``
