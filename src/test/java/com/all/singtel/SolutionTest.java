@@ -1,6 +1,7 @@
 package com.all.singtel;
 
 import com.all.singtel.util.AnimalCount;
+import com.all.singtel.util.LanguageEnum;
 import com.all.singtel.util.SoundEnum;
 import com.all.singtel.util.SoundHelper;
 import org.junit.jupiter.api.AfterEach;
@@ -89,6 +90,9 @@ public class SolutionTest {
 
     new Parrot(new SoundHelper(SoundEnum.ROOSTER)).callSound();
     assertThat(outputStream.toString(), containsString("Cock-a-doodle-doo"));
+
+    new Rooster(LanguageEnum.JAPANESE).callSound();
+    assertThat(outputStream.toString(), containsString("ko-ke-kok-ko-o"));
   }
 
   @Test

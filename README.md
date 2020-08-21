@@ -79,3 +79,28 @@ implement them to make their own special sound?
  - how many of these animals can walk? ``Done``
  - how many of these animals can sing? ``Done``
  - how many of these animals can swim? ``Done``
+ 
+####BONUS
+####If you still have time left, please consider the following:
+1.Can you add a second language (if you know a language other than English) Use the
+ rooster as a PoC for demonstrating this. For example, this is how the Rooster sounds
+ differently depending on language. Please add the rooster sound in your native
+ tongue.
+ ```
+ • Danish: kykyliky
+ • Dutch: kukeleku
+ • Finnish: kukko kiekuu
+ • French: cocorico
+ • German: kikeriki
+ • Greek: kikiriki
+ • Hebrew: coo-koo-ri-koo
+ • Hungarian: kukuriku
+ • Italian: chicchirichi
+ • Japanese: ko-ke-kok-ko-o
+ • Portuguese: cucurucu
+ • Russian: kukareku
+ • Swedish: kuckeliku
+ • Turkish: kuk-kurri-kuuu
+ • Urdu: kuklooku
+```
+ - ``Done - Added Util class for Translation and Enum class for Language``
