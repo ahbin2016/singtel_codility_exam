@@ -37,3 +37,7 @@ implement them to make their own special sound?
  - Clownfish are small and colourful (orange) `Implemented extending Fish`
  - Clownfish make jokes `Implemented extending Fish`
  - Sharks eat other fish `Implemented extending Fish`
+ 
+3.Dolphins are not exactly fish, yet, they are good swimmers
+ - Can you model a dolphin that swims without inheriting from a fish class? `Model implementing Swim and Extending Animals without inheriting Fish`
+ - How do you avoid duplicating code or introducing unneeded overhead? `Model implementing Swim and Extending Animals without inheriting Fish`

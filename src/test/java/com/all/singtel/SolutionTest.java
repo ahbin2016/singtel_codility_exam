@@ -87,6 +87,9 @@ public class SolutionTest {
 
     new Fish().canSwim();
     assertThat(outputStream.toString(), containsString("I am swimming"));
+
+    new Dolphin().canSwim();
+    assertThat(outputStream.toString(), containsString("I am swimming"));
   }
 
   @Test
