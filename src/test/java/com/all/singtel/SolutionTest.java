@@ -36,6 +36,9 @@ public class SolutionTest {
 
     new Duck().canWalk();
     assertThat(outputStream.toString(), containsString("I am walking"));
+
+    new Rooster().canWalk();
+    assertThat(outputStream.toString(), containsString("I am walking"));
   }
 
   @Test
@@ -54,6 +57,9 @@ public class SolutionTest {
 
     new Chicken().callSound("Cluck cluck");
     assertThat(outputStream.toString(), containsString("Cluck"));
+
+    new Rooster().callSound("Cock-a-doodle-doo");
+    assertThat(outputStream.toString(), containsString("Cock-a-doodle-doo"));
   }
 
   @Test
