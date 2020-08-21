@@ -46,3 +46,8 @@ implement them to make their own special sound?
 1.Can you model a butterfly? 
  - A butterfly can fly `Model implementing Fly, Walk and Extending Animals`
  - A butterfly does not make a sound `Model implementing Fly, Walk and Extending Animals`
+ 
+2.Can you optimize your model to account for the metamorphosis from caterpillar to
+  butterfly?
+ - A caterpillar cannot fly `Model optimised by adding Insect and State and introducing tranform() method`
+ - A caterpillar can walk (crawl) `Model optimised by adding Insect and State and introducing tranform() method`

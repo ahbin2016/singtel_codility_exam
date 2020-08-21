@@ -56,6 +56,10 @@ public class SolutionTest {
     assertThat(outputStream.toString(), containsString("I am flying"));
 
     new Butterfly().canFly();
+    assertThat(outputStream.toString(), containsString("I can't fly"));
+    new Butterfly().transform();
+
+    new Butterfly().canFly();
     assertThat(outputStream.toString(), containsString("I am flying"));
   }
 
