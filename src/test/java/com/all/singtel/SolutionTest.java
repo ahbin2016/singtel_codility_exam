@@ -28,22 +28,37 @@ public class SolutionTest {
 
   @Test
   void walk() {
-    new Animal().walk();
+    new Bird().canWalk();
     assertThat(outputStream.toString(), containsString("I am walking"));
 
-    new Bird().walk();
+    new Chicken().canWalk();
+    assertThat(outputStream.toString(), containsString("I am walking"));
+
+    new Duck().canWalk();
     assertThat(outputStream.toString(), containsString("I am walking"));
   }
 
   @Test
   void fly() {
-    new Bird().fly();
+    new Duck().canFly();
     assertThat(outputStream.toString(), containsString("I am flying"));
   }
 
   @Test
   void sing() {
-    new Bird().sing();
+    new Bird().callSound("I am singing");
     assertThat(outputStream.toString(), containsString("I am singing"));
+
+    new Duck().callSound("Quack, quack");
+    assertThat(outputStream.toString(), containsString("Quack"));
+
+    new Chicken().callSound("Cluck cluck");
+    assertThat(outputStream.toString(), containsString("Cluck"));
+  }
+
+  @Test
+  void swim() {
+    new Duck().canSwim();
+    assertThat(outputStream.toString(), containsString("I am swimming"));
   }
 }

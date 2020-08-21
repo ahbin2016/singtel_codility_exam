@@ -1,11 +1,16 @@
 package com.all.singtel;
 
-public class Bird extends Animal {
-  void fly() {
-    System.out.println("I am flying");
+import com.all.singtel.behaviour.Speak;
+import com.all.singtel.behaviour.Walk;
+import com.all.singtel.util.Constant;
+
+public class Bird extends Animal implements Walk, Speak {
+
+  public void callSound(String sound) {
+    System.out.println(sound);
   }
 
-  public void sing() {
-    System.out.println("I am singing");
+  public void canWalk() {
+    System.out.println(Constant.WALKING);
   }
 }
