@@ -83,5 +83,8 @@ public class SolutionTest {
   void swim() {
     new Duck().canSwim();
     assertThat(outputStream.toString(), containsString("I am swimming"));
-  }
+
+    new Fish().canSwim();
+    assertThat(outputStream.toString(), containsString("I am swimming"));
+}
 }

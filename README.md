@@ -25,3 +25,9 @@ implement them to make their own special sound?
  - A parrot living near the rooster says: “Cock-a-doodle-doo” `Implemented using a Sound Helper Class` 
  - How do you keep the parrot maintainable? What if we need another parrot
    lives near a Duck? Or near a phone that rings frequently? `Implemented using a Sound Helper Class`
+   
+####B. Model fish as well as other swimming animals
+1.In addition to the birds, can you model a fish?
+ - Fishes don’t sing `Implemented extending Animal`
+ - Fishes don’t walk `Implemented extending Animal`
+ - Fishes can swim `Implemented extending Animal implementing Swim`
