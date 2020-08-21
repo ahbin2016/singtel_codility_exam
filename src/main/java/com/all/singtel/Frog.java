@@ -1,21 +1,21 @@
 package com.all.singtel;
 
-import com.all.singtel.behaviour.Fly;
 import com.all.singtel.behaviour.Speak;
+import com.all.singtel.behaviour.Swim;
 import com.all.singtel.behaviour.Walk;
 import com.all.singtel.util.Constant;
 import com.all.singtel.util.SoundEnum;
 import com.all.singtel.util.SoundHelper;
 
-public class Bird extends Animal implements Walk, Speak, Fly {
+public class Frog extends Animal implements Swim, Speak, Walk {
 
   private SoundHelper soundHelper;
 
-  public Bird() {
+  public Frog() {
     this.soundHelper = new SoundHelper(SoundEnum.DEFAULT);
   }
 
-  public Bird(SoundHelper soundHelper) {
+  public Frog(SoundHelper soundHelper) {
     this.soundHelper = soundHelper;
   }
 
@@ -23,11 +23,11 @@ public class Bird extends Animal implements Walk, Speak, Fly {
     soundHelper.makeSound();
   }
 
-  public void canWalk() {
-    System.out.println(Constant.WALKING);
+  public void canSwim() {
+    System.out.println(Constant.SWIMMING);
   }
 
-  public void canFly() {
-    System.out.println(Constant.FLYING);
+  public void canWalk() {
+    System.out.println(Constant.WALKING);
   }
 }

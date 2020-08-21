@@ -51,3 +51,31 @@ implement them to make their own special sound?
   butterfly?
  - A caterpillar cannot fly `Model optimised by adding Insect and State and introducing tranform() method`
  - A caterpillar can walk (crawl) `Model optimised by adding Insect and State and introducing tranform() method`
+ 
+####Counting animals
+ Suppose you have an array of animals, e.g.
+ ```
+ Animal[] animals = new Animal[]{
+ new Bird(),
+ new Duck(),
+ new Chicken(),
+ new Rooster(),
+ new Parrot(),
+ new Fish(),
+ new Shark(),
+ new Clownfish(),
+ new Dolhpin(),
+ new Frog(),
+ new Dog(),
+ new Butterfly(),
+ new Cat()
+ };
+```
+
+ Note: The above instantiation may be different if you chose to set up your object model
+ differently… (hopefully you did)
+1. Can you share the code to count: ``Created a util class to count animal``
+ - how many of these animals can fly? ``Done``
+ - how many of these animals can walk? ``Done``
+ - how many of these animals can sing? ``Done``
+ - how many of these animals can swim? ``Done``

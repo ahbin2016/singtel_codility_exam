@@ -1,5 +1,6 @@
 package com.all.singtel;
 
+import com.all.singtel.util.AnimalCount;
 import com.all.singtel.util.SoundEnum;
 import com.all.singtel.util.SoundHelper;
 import org.junit.jupiter.api.AfterEach;
@@ -123,5 +124,30 @@ public class SolutionTest {
 
     new Clownfish().makeJoke();
     assertThat(outputStream.toString(), containsString("jokes"));
+  }
+
+  @Test
+  void countAnimalTest() {
+    Animal[] animals =
+        new Animal[] {
+          new Bird(),
+          new Duck(),
+          new Chicken(),
+          new Rooster(),
+          new Parrot(),
+          new Fish(),
+          new Shark(),
+          new Clownfish(),
+          new Dolphin(),
+          new Frog(),
+          new Dog(),
+          new Butterfly(),
+          new Cat()
+        };
+    AnimalCount animalCount = new AnimalCount(animals);
+    assertEquals(animalCount.flyingAnimal, 6);
+    assertEquals(animalCount.walkingAnimal, 9);
+    assertEquals(animalCount.speakingAnimal, 8);
+    assertEquals(animalCount.swimmingAnimal, 6);
   }
 }
