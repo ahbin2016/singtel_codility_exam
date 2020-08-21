@@ -31,3 +31,9 @@ implement them to make their own special sound?
  - Fishes don’t sing `Implemented extending Animal`
  - Fishes don’t walk `Implemented extending Animal`
  - Fishes can swim `Implemented extending Animal implementing Swim`
+ 
+2.Can you specialize the fish as a Shark and as a Clownfish?
+ - Sharks are large and grey `Implemented extending Fish`
+ - Clownfish are small and colourful (orange) `Implemented extending Fish`
+ - Clownfish make jokes `Implemented extending Fish`
+ - Sharks eat other fish `Implemented extending Fish`

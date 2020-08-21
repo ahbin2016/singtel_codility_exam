@@ -11,6 +11,7 @@ import java.io.PrintStream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SolutionTest {
 
@@ -29,7 +30,7 @@ public class SolutionTest {
   }
 
   @Test
-  void walk() {
+  void walkTest() {
     new Bird().canWalk();
     assertThat(outputStream.toString(), containsString("I am walking"));
 
@@ -44,7 +45,7 @@ public class SolutionTest {
   }
 
   @Test
-  void fly() {
+  void flyTest() {
     new Duck().canFly();
     assertThat(outputStream.toString(), containsString("I am flying"));
 
@@ -53,7 +54,7 @@ public class SolutionTest {
   }
 
   @Test
-  void sing() {
+  void singTest() {
     new Bird().callSound();
     assertThat(outputStream.toString(), containsString("I am singing"));
 
@@ -80,11 +81,34 @@ public class SolutionTest {
   }
 
   @Test
-  void swim() {
+  void swimTest() {
     new Duck().canSwim();
     assertThat(outputStream.toString(), containsString("I am swimming"));
 
     new Fish().canSwim();
     assertThat(outputStream.toString(), containsString("I am swimming"));
-}
+  }
+
+  @Test
+  void colorTest() {
+    assertEquals(new Fish().color(), "");
+    assertEquals(new Shark().color(), "grey");
+    assertEquals(new Clownfish().color(), "orange");
+  }
+
+  @Test
+  void sizeTest() {
+    assertEquals(new Fish().size(), "");
+    assertEquals(new Shark().size(), "large");
+    assertEquals(new Clownfish().size(), "small");
+  }
+
+  @Test
+  void specialFishTest() {
+    new Shark().canEat();
+    assertThat(outputStream.toString(), containsString("eat fish"));
+
+    new Clownfish().makeJoke();
+    assertThat(outputStream.toString(), containsString("jokes"));
+  }
 }
