@@ -42,6 +42,9 @@ public class SolutionTest {
 
     new Rooster().canWalk();
     assertThat(outputStream.toString(), containsString("I am walking"));
+
+    new Butterfly().canWalk();
+    assertThat(outputStream.toString(), containsString("I am walking"));
   }
 
   @Test
@@ -50,6 +53,9 @@ public class SolutionTest {
     assertThat(outputStream.toString(), containsString("I am flying"));
 
     new Parrot().canFly();
+    assertThat(outputStream.toString(), containsString("I am flying"));
+
+    new Butterfly().canFly();
     assertThat(outputStream.toString(), containsString("I am flying"));
   }
 
