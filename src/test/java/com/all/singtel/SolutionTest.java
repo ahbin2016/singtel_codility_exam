@@ -1,5 +1,7 @@
 package com.all.singtel;
 
+import com.all.singtel.util.SoundEnum;
+import com.all.singtel.util.SoundHelper;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -45,20 +47,35 @@ public class SolutionTest {
   void fly() {
     new Duck().canFly();
     assertThat(outputStream.toString(), containsString("I am flying"));
+
+    new Parrot().canFly();
+    assertThat(outputStream.toString(), containsString("I am flying"));
   }
 
   @Test
   void sing() {
-    new Bird().callSound("I am singing");
+    new Bird().callSound();
     assertThat(outputStream.toString(), containsString("I am singing"));
 
-    new Duck().callSound("Quack, quack");
+    new Duck().callSound();
     assertThat(outputStream.toString(), containsString("Quack"));
 
-    new Chicken().callSound("Cluck cluck");
+    new Chicken().callSound();
     assertThat(outputStream.toString(), containsString("Cluck"));
 
-    new Rooster().callSound("Cock-a-doodle-doo");
+    new Rooster().callSound();
+    assertThat(outputStream.toString(), containsString("Cock-a-doodle-doo"));
+
+    new Parrot().callSound();
+    assertThat(outputStream.toString(), containsString("I am singing"));
+
+    new Parrot(new SoundHelper(SoundEnum.DOG)).callSound();
+    assertThat(outputStream.toString(), containsString("Woof, woof"));
+
+    new Parrot(new SoundHelper(SoundEnum.CAT)).callSound();
+    assertThat(outputStream.toString(), containsString("Meow"));
+
+    new Parrot(new SoundHelper(SoundEnum.ROOSTER)).callSound();
     assertThat(outputStream.toString(), containsString("Cock-a-doodle-doo"));
   }
 

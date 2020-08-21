@@ -18,3 +18,10 @@ implement them to make their own special sound?
  - How is the rooster related to the chicken? `A Rooster is a kind of Chicken`
  - Can you think of other ways to model a rooster without using inheritance? `Rooster can be an Animal or a Bird and implements
    all related behaviour of Rooster`
+
+4.Can you model a parrot? We are specifically interested in three parrots, one that lived in a house with dogs one in a house with cats, the other lived on a farm next to the rooster.
+ - A parrot living with dogs says: “Woof, woof” `Implemented using a Sound Helper Class`
+ - A parrot living with cats says: “Meow” `Implemented using a Sound Helper Class`
+ - A parrot living near the rooster says: “Cock-a-doodle-doo” `Implemented using a Sound Helper Class` 
+ - How do you keep the parrot maintainable? What if we need another parrot
+   lives near a Duck? Or near a phone that rings frequently? `Implemented using a Sound Helper Class`

@@ -1,10 +1,16 @@
 package com.all.singtel;
 
+import com.all.singtel.util.SoundEnum;
+import com.all.singtel.util.SoundHelper;
+
 public class Chicken extends Bird {
 
-  @Override
-  public void callSound(String sound) {
-    super.callSound(sound);
+  public Chicken() {
+    super(new SoundHelper(SoundEnum.CHICKEN));
+  }
+
+  public Chicken(SoundHelper soundHelper) {
+    super(soundHelper);
   }
 
   @Override
